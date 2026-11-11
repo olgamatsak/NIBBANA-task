@@ -24,4 +24,4 @@ Implemented the read-only JavaScript suite with Playwright Test and node-postgre
 
 ## 4. Document findings and prepare review — committed
 
-Prepared the setup guide, data quality findings, AI usage notes and reproducible evidence queries. Verified dependency installation, database initialization, expected suite failure on supplied data and report output on a fresh database. The reviewed documentation and evidence scripts are committed. The README still needs the time-spent figure before submission.
+Prepared the setup guide, data quality findings, AI usage notes and reproducible evidence queries. Verified dependency installation, database initialization, expected suite failure on supplied data and report output on a fresh database. The reviewed documentation and evidence scripts are committed. The README records approximately 3 hours spent.
