@@ -25,3 +25,7 @@ Implemented the read-only JavaScript suite with Playwright Test and node-postgre
 ## 4. Document findings and prepare review — committed
 
 Prepared the setup guide, data quality findings, AI usage notes and reproducible evidence queries. Verified dependency installation, database initialization, expected suite failure on supplied data and report output on a fresh database. The reviewed documentation and evidence scripts are committed. The README records approximately 3 hours spent.
+
+## 5. Verify the optional daily visits report — complete locally, pending review
+
+The daily report was verified in read-only PostgreSQL sessions against the supplied data and a separate synthetic fixture. Member totals matched the required branch report. The fixture checked friend-event replay, checkout boundaries and branch-local dates.
