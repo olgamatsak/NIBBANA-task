@@ -22,9 +22,6 @@ Implemented the standalone PostgreSQL 17 query and ran it with `psql -f` in read
 
 Implemented the read-only JavaScript suite with Playwright Test and node-postgres. `npm test` passed on clean fixture data and returned exit code 1 on both the deliberately flawed fixture and the supplied data. The failing runs reported the expected integrity issue with affected row counts.
 
-## 4. Document findings and prepare review
+## 4. Document findings and prepare review — drafted locally
 
-- `DATA_QUALITY.md` records each finding's SQL evidence, count, severity, estimated report impact, likely cause, questions for source teams and suggested monitoring.
-- `README.md` explains setup, the test command, database configuration and time spent.
-- `AI_USAGE.md` records how AI contributed, which suggestions were corrected or rejected, and how the results were verified.
-- Rerun the documented commands from a clean setup and reconcile each reported count against its query. Present the local changes, verification results and open decisions for review. Consider the daily visits bonus after the required work is verified.
+Prepared the setup guide, data quality findings, AI usage notes and reproducible evidence queries. Verified dependency installation, database initialization, expected suite failure on supplied data and report output on a fresh database. The documentation is pending review, and the time spent is pending Olga's confirmation.
