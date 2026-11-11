@@ -44,4 +44,4 @@ PGOPTIONS='-c default_transaction_read_only=on' psql -X -v ON_ERROR_STOP=1 -f re
 See [data quality findings](DATA_QUALITY.md) for evidence and report impact and
 [AI usage](AI_USAGE.md) for contributions and verification.
 
-Time spent: Olga to confirm before submission.
+Time spent: approximately 3 hours.
