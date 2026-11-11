@@ -18,7 +18,7 @@ Verified that PostgreSQL 17 started, all four seed table counts matched the supp
 
 Implemented the standalone PostgreSQL 17 query and ran it with `psql -f` in read-only sessions against the supplied database and a separate database with the same schema. The supplied data returned one row per branch. The separate fixture matched the expected counts for replayed events, reused references, uppercase check-ins, incomplete visits, local year boundaries and a branch with zero visits.
 
-## 3. Build and verify the data quality suite — complete locally, pending review
+## 3. Build and verify the data quality suite — complete and committed
 
 Implemented the read-only JavaScript suite with Playwright Test and node-postgres. `npm test` passed on clean fixture data and returned exit code 1 on both the deliberately flawed fixture and the supplied data. The failing runs reported the expected integrity issue with affected row counts.
 
