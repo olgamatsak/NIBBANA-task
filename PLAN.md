@@ -14,11 +14,9 @@ Commit this plan and its updates to the NIBBANA-task repository. Present impleme
 
 Verified that PostgreSQL 17 started, all four seed table counts matched the supplied archive, and the profiling queries ran in a read-only session. The detailed queries and results are in the local workspace.
 
-## 2. Define and verify the required visit report
+## 2. Define and verify the required visit report — complete locally, pending review
 
-Document how the query pairs entry and exit events, handles exact replays and conflicting source references, treats unknown members and unmatched events, and assigns visits to a branch-local date. Write `reports/visits_per_branch.sql` as a single standalone PostgreSQL 17 query that returns one row per branch, including branches with zero visits.
-
-Run it with `psql -f` in a read-only session against the supplied data and a separate database with the same schema. Check expected results for exact replays, reference collisions, uppercase check-ins, unmatched events, a visit crossing the local year boundary and a branch with zero visits.
+Implemented the standalone PostgreSQL 17 query and ran it with `psql -f` in read-only sessions against the supplied database and a separate database with the same schema. The supplied data returned one row per branch. The separate fixture matched the expected counts for replayed events, reused references, uppercase check-ins, incomplete visits, local year boundaries and a branch with zero visits.
 
 ## 3. Build and verify the data quality suite
 
